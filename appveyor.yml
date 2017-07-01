@@ -22,7 +22,7 @@ after_build:
   - cmd: dotnet pack ./src/AppVeyorClient/AppVeyorClient.csproj --output ./src/AppVeyorClient/bin/debug/netcoreapp1.1/publish
 
 artifacts:
- - path: '/src/AppVeyorClient/bin/debug/netcoreapp1.1/publish/*.nupkg'
+ - path: './src/AppVeyorClient/bin/debug/netcoreapp1.1/publish/*.nupkg'
    type: NuGetPackage
 clone_depth: 1
 #test_script:
