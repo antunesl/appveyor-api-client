@@ -16,7 +16,7 @@ before_build:
 build_script:
   # output will be in ./src/AppVeyorClient/bin/debug/netcoreapp1.1/publish
   - cmd: dotnet publish ./src/AppVeyorClient/AppVeyorClient.csproj
-  - cmd: dotnet publish ./tests/AppVeyorClient/AppVeyorClient.Tests.csproj
+  - cmd: dotnet publish ./tests/AppVeyorClient.Tests/AppVeyorClient.Tests.csproj
   
 after_build:
   # For once the build has completed
