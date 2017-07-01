@@ -35,8 +35,8 @@ test_script:
   # restore packages for our unit tests
   - cmd: dotnet restore ./tests/AppVeyorClient.Tests/AppVeyorClient.Tests.csproj --verbosity m
   # run the unit tests (requires changing into the test directory)
-  - cmd: cd tests
-  - cmd: dotnet xunit
+  - cmd: cd ./tests/AppVeyorClient.Tests
+  - cmd: dotnet test
 on_finish :
   # any cleanup in here
 #deploy:
