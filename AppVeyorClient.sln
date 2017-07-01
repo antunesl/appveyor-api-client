@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{64F8DA29-427
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E5679DCE-947D-4F20-B9D5-68910FBA9EE1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppVeyorClinet.Tests", "tests\AppVeyorClinet.Tests\AppVeyorClinet.Tests.csproj", "{76000268-05E5-4E0A-8002-3D1D03D8ABB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppVeyorClient.Tests", "tests\AppVeyorClient.Tests\AppVeyorClient.Tests.csproj", "{76000268-05E5-4E0A-8002-3D1D03D8ABB4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7659050D-3ADA-40C2-9FDB-0F2AB1C4D488}"
 	ProjectSection(SolutionItems) = preProject

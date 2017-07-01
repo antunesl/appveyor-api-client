@@ -1,9 +1,8 @@
-﻿using AppVeyorClient;
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace AppVeyorClinet.Tests
+namespace AppVeyorClient.Tests
 {
     public class BuildTests
     {
