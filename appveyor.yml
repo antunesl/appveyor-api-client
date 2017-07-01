@@ -25,14 +25,12 @@ after_build:
   # For once the build has completed
   - cmd: dotnet pack ./src/AppVeyorClient/AppVeyorClient.csproj --output ./src/AppVeyorClient/bin/debug/netcoreapp1.1/publish
 
-test_script:
- - cmd: dotnet test ./tests/AppVeyorClient.Tests/AppVeyorClient.Tests.csproj
-
 artifacts:
  - path: '**\*.nupkg'
    type: NuGetPackage
 
 clone_depth: 1
+
 test_script:
   # restore packages for our unit tests
   - cmd: dotnet restore ./tests/AppVeyorClient.Tests/AppVeyorClient.Tests.csproj --verbosity m
