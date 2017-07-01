@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppVeyorClient", "src\AppVeyorClient\AppVeyorClient.csproj", "{AEBA9448-56FE-45BA-B5E9-3DE53ACE1CBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{64F8DA29-4270-446B-87E7-6D7BF2B88204}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E5679DCE-947D-4F20-B9D5-68910FBA9EE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppVeyorClinet.Tests", "tests\AppVeyorClinet.Tests\AppVeyorClinet.Tests.csproj", "{76000268-05E5-4E0A-8002-3D1D03D8ABB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7659050D-3ADA-40C2-9FDB-0F2AB1C4D488}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEBA9448-56FE-45BA-B5E9-3DE53ACE1CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEBA9448-56FE-45BA-B5E9-3DE53ACE1CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEBA9448-56FE-45BA-B5E9-3DE53ACE1CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEBA9448-56FE-45BA-B5E9-3DE53ACE1CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76000268-05E5-4E0A-8002-3D1D03D8ABB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76000268-05E5-4E0A-8002-3D1D03D8ABB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76000268-05E5-4E0A-8002-3D1D03D8ABB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76000268-05E5-4E0A-8002-3D1D03D8ABB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AEBA9448-56FE-45BA-B5E9-3DE53ACE1CBC} = {64F8DA29-4270-446B-87E7-6D7BF2B88204}
+		{76000268-05E5-4E0A-8002-3D1D03D8ABB4} = {E5679DCE-947D-4F20-B9D5-68910FBA9EE1}
+	EndGlobalSection
+EndGlobal
