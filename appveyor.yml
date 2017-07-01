@@ -19,6 +19,8 @@ build_script:
   
 after_build:
   # For once the build has completed
+  - cmd: dotnet pack ./src/AppVeyorClient/AppVeyorClient.csproj --output ./src/AppVeyorClient/bin/debug/netcoreapp1.1/publish
+
 artifacts:
  - path: '/src/AppVeyorClient/bin/debug/netcoreapp1.1/publish/*.nupkg'
    type: NuGetPackage
