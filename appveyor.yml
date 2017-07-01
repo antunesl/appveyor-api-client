@@ -16,28 +16,29 @@ before_build:
   - cmd: dotnet --version
   # Display minimal restore text
   - cmd: dotnet restore ./src/AppVeyorClient/AppVeyorClient.csproj --verbosity m
-  - cmd: dotnet restore ./tests/AppVeyorClient.Tests/AppVeyorClient.Tests.csproj --verbosity m
 
 build_script:
   # output will be in ./src/AppVeyorClient/bin/debug/netcoreapp1.1/publish
   - cmd: dotnet publish ./src/AppVeyorClient/AppVeyorClient.csproj
-  - cmd: dotnet publish ./tests/AppVeyorClient.Tests/AppVeyorClient.Tests.csproj
   
 after_build:
   # For once the build has completed
   - cmd: dotnet pack ./src/AppVeyorClient/AppVeyorClient.csproj --output ./src/AppVeyorClient/bin/debug/netcoreapp1.1/publish
+
+test_script:
+ - cmd: dotnet test ./tests/AppVeyorClient.Tests/AppVeyorClient.Tests.csproj
 
 artifacts:
  - path: '**\*.nupkg'
    type: NuGetPackage
 
 clone_depth: 1
-#test_script:
+test_script:
   # restore packages for our unit tests
-  #- cmd: dotnet restore ./tests/tests.csproj --verbosity m
+  - cmd: dotnet restore ./tests/AppVeyorClient.Tests/AppVeyorClient.Tests.csproj --verbosity m
   # run the unit tests (requires changing into the test directory)
-  #- cmd: cd tests
-  #- cmd: dotnet xunit
+  - cmd: cd tests
+  - cmd: dotnet xunit
 on_finish :
   # any cleanup in here
 #deploy:
