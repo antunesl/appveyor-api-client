@@ -39,6 +39,11 @@ test_script:
   - cmd: dotnet test
 on_finish :
   # any cleanup in here
-#deploy:
-#- provider: Environment
-#  name: SplitarooAPI-Staging
+deploy:
+  provider: NuGet
+  #server:                  # remove to push to NuGet.org
+  api_key:
+    secure: Jp5g6Py44Rh01e4zCeqOptcHH8wlt3dyCpVPZ+V6bvBoRwvI3W6lMZOeas2x/H4D
+  skip_symbols: false
+  #symbol_server:           # remove to push symbols to SymbolSource.org
+  artifact: /.*\.nupkg/
