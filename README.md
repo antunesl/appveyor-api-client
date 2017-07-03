@@ -15,4 +15,4 @@ Client for the AppVeyor REST API
 
 | Name           | NuGet |
 | :---           | :---  |
-| AppVeyorClient | [![AppVeyorClient NuGet Package](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/AppVeyorClient/) |
+| AppVeyorClient | [![AppVeyorClient NuGet Package](https://img.shields.io/nuget/v/AppVeyorClient.svg)](https://www.nuget.org/packages/AppVeyorClient/) |
