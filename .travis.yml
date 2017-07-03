@@ -9,7 +9,7 @@ env:
 script:
   - dotnet restore
   - dotnet build
-  - dotnet test ./tests/AppVeyorClient.Tests
+  - dotnet test ./tests/AppVeyorClient.Tests/AppVeyorClient.Tests.csproj
 
 notifications:
   email:
