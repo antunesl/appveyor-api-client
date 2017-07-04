@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace AppVeyorClient.Clients
@@ -44,6 +45,26 @@ namespace AppVeyorClient.Clients
             {
                 throw ex;
             }
+        }
+
+        protected async Task<ApiResponse> DeleteHttp(string url)
+        {
+            SetInitialToken();
+
+            var response = await _client.DeleteAsync(url);
+
+            return new ApiResponse((int)response.StatusCode);
+        }
+
+        protected async Task<ApiResponse<T>> PostHttp<T>(string url, object data)
+        {
+            SetInitialToken();
+
+            var response = await _client.PostAsync(url, new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json"));
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return new ApiResponse<T>((int)response.StatusCode, JsonConvert.DeserializeObject<T>(content));
         }
 
 

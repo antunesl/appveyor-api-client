@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace AppVeyorClient.Model
+﻿namespace AppVeyorClient.Model
 {
-    public class ApiResponse<T>
+    public class ApiResponse
     {
         /// <summary>
         /// Gets or sets the status code (HTTP status code)
@@ -11,11 +9,19 @@ namespace AppVeyorClient.Model
         public int StatusCode { get; private set; }
 
         /// <summary>
-        /// Gets or sets the HTTP headers
+        /// Initializes a new instance of the <see cref="ApiResponse&lt;T&gt;" /> class.
         /// </summary>
-        /// <value>HTTP headers</value>
-        public IDictionary<string, string> Headers { get; private set; }
+        /// <param name="statusCode">HTTP status code.</param>
+        /// <param name="data">Data (parsed HTTP body)</param>
+        public ApiResponse(int statusCode)
+        {
+            this.StatusCode = statusCode;
+        }
 
+    }
+
+    public class ApiResponse<T> : ApiResponse
+    {
         /// <summary>
         /// Gets or sets the data (parsed HTTP body)
         /// </summary>
@@ -28,10 +34,8 @@ namespace AppVeyorClient.Model
         /// <param name="statusCode">HTTP status code.</param>
         /// <param name="headers">HTTP headers.</param>
         /// <param name="data">Data (parsed HTTP body)</param>
-        public ApiResponse(int statusCode, T data)
+        public ApiResponse(int statusCode, T data) : base(statusCode)
         {
-            this.StatusCode = statusCode;
-            //this.Headers = headers;
             this.Data = data;
         }
 

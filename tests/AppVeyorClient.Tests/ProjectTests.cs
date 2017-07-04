@@ -1,4 +1,3 @@
-using AppVeyorClient;
 using System;
 using System.Threading.Tasks;
 using Xunit;
