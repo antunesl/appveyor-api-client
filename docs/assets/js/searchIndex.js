@@ -34,24 +34,24 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"Build",
-        content:"Build",
+        title:"AppVeyorApi",
+        content:"AppVeyorApi",
         description:'',
         tags:''
     });
 
     a({
         id:1,
-        title:"StartBuildInfo",
-        content:"StartBuildInfo",
+        title:"ProjectHistory",
+        content:"ProjectHistory",
         description:'',
         tags:''
     });
 
     a({
         id:2,
-        title:"ProjectNuGetFeed",
-        content:"ProjectNuGetFeed",
+        title:"ProjectDeployments",
+        content:"ProjectDeployments",
         description:'',
         tags:''
     });
@@ -66,14 +66,22 @@ var searchModule = function() {
 
     a({
         id:4,
-        title:"ProjectSecurityDescriptorRoleAce",
-        content:"ProjectSecurityDescriptorRoleAce",
+        title:"Job",
+        content:"Job",
         description:'',
         tags:''
     });
 
     a({
         id:5,
+        title:"ProjectNuGetFeed",
+        content:"ProjectNuGetFeed",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:6,
         title:"ApiResponse",
         content:"ApiResponse",
         description:'',
@@ -81,17 +89,9 @@ var searchModule = function() {
     });
 
     a({
-        id:6,
-        title:"ProjectSecurityDescriptorAccessRightDefinition NameEnum",
-        content:"ProjectSecurityDescriptorAccessRightDefinition NameEnum",
-        description:'',
-        tags:''
-    });
-
-    a({
         id:7,
-        title:"DeploymentStatus",
-        content:"DeploymentStatus",
+        title:"ProjectMessage",
+        content:"ProjectMessage",
         description:'',
         tags:''
     });
@@ -106,40 +106,40 @@ var searchModule = function() {
 
     a({
         id:9,
-        title:"ProjectMessage CategoryEnum",
-        content:"ProjectMessage CategoryEnum",
+        title:"DeploymentClient",
+        content:"DeploymentClient",
         description:'',
         tags:''
     });
 
     a({
         id:10,
-        title:"ApiResponse",
-        content:"ApiResponse",
+        title:"ProjectSecurityDescriptorRoleAce",
+        content:"ProjectSecurityDescriptorRoleAce",
         description:'',
         tags:''
     });
 
     a({
         id:11,
-        title:"BuildClient",
-        content:"BuildClient",
+        title:"ProjectJob OsTypeEnum",
+        content:"ProjectJob OsTypeEnum",
         description:'',
         tags:''
     });
 
     a({
         id:12,
-        title:"ProjectClient",
-        content:"ProjectClient",
+        title:"ProjectJob",
+        content:"ProjectJob",
         description:'',
         tags:''
     });
 
     a({
         id:13,
-        title:"ProjectMessage",
-        content:"ProjectMessage",
+        title:"ProjectJob StatusEnum",
+        content:"ProjectJob StatusEnum",
         description:'',
         tags:''
     });
@@ -154,22 +154,14 @@ var searchModule = function() {
 
     a({
         id:15,
-        title:"DeploymentClient",
-        content:"DeploymentClient",
+        title:"BuildClient",
+        content:"BuildClient",
         description:'',
         tags:''
     });
 
     a({
         id:16,
-        title:"ProjectBuild",
-        content:"ProjectBuild",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:17,
         title:"SecurityDescriptor",
         content:"SecurityDescriptor",
         description:'',
@@ -177,23 +169,15 @@ var searchModule = function() {
     });
 
     a({
+        id:17,
+        title:"ProjectSecurityDescriptorAccessRight NameEnum",
+        content:"ProjectSecurityDescriptorAccessRight NameEnum",
+        description:'',
+        tags:''
+    });
+
+    a({
         id:18,
-        title:"ProjectJob",
-        content:"ProjectJob",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:19,
-        title:"ProjectSecurityDescriptorAccessRightDefinition",
-        content:"ProjectSecurityDescriptorAccessRightDefinition",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:20,
         title:"EnvironmentProvider",
         content:"EnvironmentProvider",
         description:'',
@@ -201,17 +185,33 @@ var searchModule = function() {
     });
 
     a({
+        id:19,
+        title:"Build",
+        content:"Build",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:20,
+        title:"RepositoryTypeEnum",
+        content:"RepositoryTypeEnum",
+        description:'',
+        tags:''
+    });
+
+    a({
         id:21,
-        title:"ProjectSecurityDescriptor",
-        content:"ProjectSecurityDescriptor",
+        title:"JobStatus",
+        content:"JobStatus",
         description:'',
         tags:''
     });
 
     a({
         id:22,
-        title:"Job",
-        content:"Job",
+        title:"StartBuildInfo",
+        content:"StartBuildInfo",
         description:'',
         tags:''
     });
@@ -226,102 +226,6 @@ var searchModule = function() {
 
     a({
         id:24,
-        title:"ProjectJob StatusEnum",
-        content:"ProjectJob StatusEnum",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:25,
-        title:"AppVeyorClientException",
-        content:"AppVeyorClientException",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:26,
-        title:"ProjectHistory",
-        content:"ProjectHistory",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:27,
-        title:"ProjectSecurityDescriptorAccessRight",
-        content:"ProjectSecurityDescriptorAccessRight",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:28,
-        title:"ProjectSecurityDescriptorAccessRight NameEnum",
-        content:"ProjectSecurityDescriptorAccessRight NameEnum",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:29,
-        title:"RepositoryTypeEnum",
-        content:"RepositoryTypeEnum",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:30,
-        title:"JobStatus",
-        content:"JobStatus",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:31,
-        title:"ProjectDeployments",
-        content:"ProjectDeployments",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:32,
-        title:"BaseClient",
-        content:"BaseClient",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:33,
-        title:"ProjectJob OsTypeEnum",
-        content:"ProjectJob OsTypeEnum",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:34,
-        title:"Project",
-        content:"Project",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:35,
-        title:"AppVeyorApiOptions",
-        content:"AppVeyorApiOptions",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:36,
         title:"Deployment",
         content:"Deployment",
         description:'',
@@ -329,28 +233,124 @@ var searchModule = function() {
     });
 
     a({
+        id:25,
+        title:"AppVeyorApiOptions",
+        content:"AppVeyorApiOptions",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:26,
+        title:"AppVeyorClientException",
+        content:"AppVeyorClientException",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:27,
+        title:"BaseClient",
+        content:"BaseClient",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:28,
+        title:"ProjectMessage CategoryEnum",
+        content:"ProjectMessage CategoryEnum",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:29,
+        title:"ProjectBuild",
+        content:"ProjectBuild",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:30,
+        title:"ProjectSecurityDescriptorAccessRightDefinition",
+        content:"ProjectSecurityDescriptorAccessRightDefinition",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:31,
+        title:"ProjectSecurityDescriptorAccessRight",
+        content:"ProjectSecurityDescriptorAccessRight",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:32,
+        title:"ApiResponse",
+        content:"ApiResponse",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:33,
+        title:"ProjectSecurityDescriptorAccessRightDefinition NameEnum",
+        content:"ProjectSecurityDescriptorAccessRightDefinition NameEnum",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:34,
+        title:"DeploymentStatus",
+        content:"DeploymentStatus",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:35,
+        title:"ProjectSecurityDescriptor",
+        content:"ProjectSecurityDescriptor",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:36,
+        title:"Project",
+        content:"Project",
+        description:'',
+        tags:''
+    });
+
+    a({
         id:37,
-        title:"AppVeyorApi",
-        content:"AppVeyorApi",
+        title:"ProjectClient",
+        content:"ProjectClient",
         description:'',
         tags:''
     });
 
     y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/Build',
-        title:"Build",
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient/AppVeyorApi',
+        title:"AppVeyorApi",
         description:""
     });
 
     y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/StartBuildInfo',
-        title:"StartBuildInfo",
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectHistory',
+        title:"ProjectHistory",
         description:""
     });
 
     y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectNuGetFeed',
-        title:"ProjectNuGetFeed",
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectDeployments',
+        title:"ProjectDeployments",
         description:""
     });
 
@@ -361,8 +361,170 @@ var searchModule = function() {
     });
 
     y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/Job',
+        title:"Job",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectNuGetFeed',
+        title:"ProjectNuGetFeed",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ApiResponse',
+        title:"ApiResponse",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectMessage',
+        title:"ProjectMessage",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/StatusEnum',
+        title:"Build.StatusEnum",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Clients/DeploymentClient',
+        title:"DeploymentClient",
+        description:""
+    });
+
+    y({
         url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectSecurityDescriptorRoleAce',
         title:"ProjectSecurityDescriptorRoleAce",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/OsTypeEnum',
+        title:"ProjectJob.OsTypeEnum",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectJob',
+        title:"ProjectJob",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/StatusEnum',
+        title:"ProjectJob.StatusEnum",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/RepositoryScmEnum',
+        title:"RepositoryScmEnum",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Clients/BuildClient',
+        title:"BuildClient",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/SecurityDescriptor',
+        title:"SecurityDescriptor",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/NameEnum',
+        title:"ProjectSecurityDescriptorAccessRight.NameEnum",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/EnvironmentProvider',
+        title:"EnvironmentProvider",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/Build',
+        title:"Build",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/RepositoryTypeEnum',
+        title:"RepositoryTypeEnum",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/JobStatus',
+        title:"JobStatus",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/StartBuildInfo',
+        title:"StartBuildInfo",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/Environment',
+        title:"Environment",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/Deployment',
+        title:"Deployment",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient/AppVeyorApiOptions',
+        title:"AppVeyorApiOptions",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient/AppVeyorClientException',
+        title:"AppVeyorClientException",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Clients/BaseClient',
+        title:"BaseClient",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/CategoryEnum',
+        title:"ProjectMessage.CategoryEnum",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectBuild',
+        title:"ProjectBuild",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectSecurityDescriptorAccessRightDefinition',
+        title:"ProjectSecurityDescriptorAccessRightDefinition",
+        description:""
+    });
+
+    y({
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectSecurityDescriptorAccessRight',
+        title:"ProjectSecurityDescriptorAccessRight",
         description:""
     });
 
@@ -385,158 +547,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/StatusEnum',
-        title:"Build.StatusEnum",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/CategoryEnum',
-        title:"ProjectMessage.CategoryEnum",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ApiResponse',
-        title:"ApiResponse",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Clients/BuildClient',
-        title:"BuildClient",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Clients/ProjectClient',
-        title:"ProjectClient",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectMessage',
-        title:"ProjectMessage",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/RepositoryScmEnum',
-        title:"RepositoryScmEnum",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Clients/DeploymentClient',
-        title:"DeploymentClient",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectBuild',
-        title:"ProjectBuild",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/SecurityDescriptor',
-        title:"SecurityDescriptor",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectJob',
-        title:"ProjectJob",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectSecurityDescriptorAccessRightDefinition',
-        title:"ProjectSecurityDescriptorAccessRightDefinition",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/EnvironmentProvider',
-        title:"EnvironmentProvider",
-        description:""
-    });
-
-    y({
         url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectSecurityDescriptor',
         title:"ProjectSecurityDescriptor",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/Job',
-        title:"Job",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/Environment',
-        title:"Environment",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/StatusEnum',
-        title:"ProjectJob.StatusEnum",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient/AppVeyorClientException',
-        title:"AppVeyorClientException",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectHistory',
-        title:"ProjectHistory",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectSecurityDescriptorAccessRight',
-        title:"ProjectSecurityDescriptorAccessRight",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/NameEnum',
-        title:"ProjectSecurityDescriptorAccessRight.NameEnum",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/RepositoryTypeEnum',
-        title:"RepositoryTypeEnum",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/JobStatus',
-        title:"JobStatus",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/ProjectDeployments',
-        title:"ProjectDeployments",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Clients/BaseClient',
-        title:"BaseClient",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/OsTypeEnum',
-        title:"ProjectJob.OsTypeEnum",
         description:""
     });
 
@@ -547,20 +559,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient/AppVeyorApiOptions',
-        title:"AppVeyorApiOptions",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Model/Deployment',
-        title:"Deployment",
-        description:""
-    });
-
-    y({
-        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient/AppVeyorApi',
-        title:"AppVeyorApi",
+        url:'/appveyor-api-client/appveyor-api-client/api/AppVeyorClient.Clients/ProjectClient',
+        title:"ProjectClient",
         description:""
     });
 
