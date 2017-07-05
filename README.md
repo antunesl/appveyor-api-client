@@ -1,6 +1,9 @@
-# appveyor-api-client
-Client for the AppVeyor REST API 
+# AppVeyor API Client
+AppVeyor REST API client for .NET
 
+
+## Documentation
+https://antunesl.github.io/appveyor-api-client/api/
 
 
 ## Continuous Integration
