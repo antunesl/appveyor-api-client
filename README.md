@@ -1,4 +1,4 @@
-# Appveyor API Client
+# AppVeyor API Client
 AppVeyor REST API client for .NET
 
 
