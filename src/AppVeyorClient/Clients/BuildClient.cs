@@ -1,4 +1,5 @@
 ﻿using AppVeyorClient.Model;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
@@ -6,7 +7,7 @@ namespace AppVeyorClient.Clients
 {
     public class BuildClient : BaseClient
     {
-        public BuildClient(string baseUri, string accessToken) : base(baseUri, accessToken)
+        public BuildClient(ILogger<BuildClient> logger, string baseUri, string accessToken) : base(logger, baseUri, accessToken)
         {
         }
 

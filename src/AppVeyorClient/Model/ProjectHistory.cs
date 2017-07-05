@@ -6,14 +6,14 @@ using System.Text;
 
 namespace AppVeyorClient.Model
 {
-    public class GetProjectHistoryResponse
+    public class ProjectHistory
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetProjectHistoryResponse" /> class.
+        /// Initializes a new instance of the <see cref="ProjectHistory" /> class.
         /// </summary>
         /// <param name="Project">Project.</param>
         /// <param name="Builds">Builds.</param>
-        public GetProjectHistoryResponse(Project Project = default(Project), List<Build> Builds = default(List<Build>))
+        public ProjectHistory(Project Project = default(Project), List<Build> Builds = default(List<Build>))
         {
             this.Project = Project;
             this.Builds = Builds;
@@ -60,7 +60,7 @@ namespace AppVeyorClient.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as GetProjectHistoryResponse);
+            return this.Equals(obj as ProjectHistory);
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace AppVeyorClient.Model
         /// </summary>
         /// <param name="other">Instance of InlineResponse2005 to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(GetProjectHistoryResponse other)
+        public bool Equals(ProjectHistory other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

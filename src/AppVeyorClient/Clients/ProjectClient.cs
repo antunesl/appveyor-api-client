@@ -1,4 +1,5 @@
 ﻿using AppVeyorClient.Model;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -7,27 +8,28 @@ namespace AppVeyorClient.Clients
 {
     public class ProjectClient : BaseClient
     {
-        public ProjectClient(string baseUri, string accessToken) : base(baseUri, accessToken)
+        public ProjectClient(ILogger<ProjectClient> logger, string baseUri, string accessToken) : base(logger, baseUri, accessToken)
         {
 
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="accountName"></param>
+        /// <param name="projectSlug"></param>
+        /// <returns></returns>
         public async Task<ApiResponse<ProjectBuild>> GetProjectLastBuild(string accountName, string projectSlug)
         {
-            // verify the required parameter 'accountName' is set
             if (accountName == null)
                 throw new ArgumentNullException(nameof(accountName), "Missing required parameter 'accountName' when calling ProjectClient->GetProjectLastBuild");
-            // verify the required parameter 'projectSlug' is set
+            
             if (projectSlug == null)
                 throw new ArgumentNullException(nameof(projectSlug), "Missing required parameter 'projectSlug' when calling ProjectClient->GetProjectLastBuild");
 
             var localVarPath = $"api/projects/{accountName}/{projectSlug}";
-
-            var result = await GetHttp<ProjectBuild>(localVarPath);
-
-            return result;
-
+            return await GetHttp<ProjectBuild>(localVarPath);
         }
 
 
@@ -46,9 +48,7 @@ namespace AppVeyorClient.Clients
         public async Task<ApiResponse<ProjectBuild>> GetProjectBuildByVersion(string accountName, string projectSlug, string buildVersion)
         {
             var url = $"api/projects/{accountName}/{projectSlug}/build/{buildVersion}";
-
             return await GetHttp<ProjectBuild>(url);
-
         }
 
 
@@ -64,11 +64,8 @@ namespace AppVeyorClient.Clients
         ///// <returns>Task of ApiResponse (InlineResponse2006)</returns>
         public async Task<ApiResponse<ProjectDeployments>> GetProjectDeployments(string accountName, string projectSlug)
         {
-
             var url = $"api/projects/{accountName}/{projectSlug}/deployments";
-
             return await GetHttp<ProjectDeployments>(url);
-
         }
 
 
@@ -87,7 +84,7 @@ namespace AppVeyorClient.Clients
         ///// <param name="startBuildId">Maximum &#x60;buildId&#x60; to include in the results (exclusive). (optional)</param>
         ///// <param name="branch">Repository Branch (optional)</param>
         ///// <returns>Task of InlineResponse2005</returns>
-        public async Task<ApiResponse<GetProjectHistoryResponse>> GetProjectHistory(int? recordsNumber, string accountName, string projectSlug, int? startBuildId = null, string branch = null)
+        public async Task<ApiResponse<ProjectHistory>> GetProjectHistory(int? recordsNumber, string accountName, string projectSlug, int? startBuildId = null, string branch = null)
         {
             var url = $"api/projects/{accountName}/{projectSlug}/history?recordsNumber={recordsNumber}";
 
@@ -101,8 +98,7 @@ namespace AppVeyorClient.Clients
                 url = url + $"&branch={branch}";
             }
 
-
-            return await GetHttp<GetProjectHistoryResponse>(url);
+            return await GetHttp<ProjectHistory>(url);
         }
 
 
@@ -121,10 +117,7 @@ namespace AppVeyorClient.Clients
         public async Task<ApiResponse<ProjectBuild>> GetProjectLastBuildBranch(string accountName, string projectSlug, string buildBranch)
         {
             var localVarPath = $"api/projects/{accountName}/{projectSlug}/branch/{buildBranch}";
-
-            var result = await GetHttp<ProjectBuild>(localVarPath);
-
-            return result;
+            return await GetHttp<ProjectBuild>(localVarPath);
         }
 
 
@@ -142,12 +135,7 @@ namespace AppVeyorClient.Clients
         public async Task<ApiResponse<List<Project>>> GetProjects()
         {
             var localVarPath = $"api/projects/";
-
-            var result = await GetHttp<List<Project>>(localVarPath);
-
-            return result;
-
-
+            return await GetHttp<List<Project>>(localVarPath);
         }
 
 
