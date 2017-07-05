@@ -1,3 +1,4 @@
 
 
 Settings[Keys.Host] = "antunesl.github.io/appveyor-api-client/";
+Settings[Keys.LinkRoot] = "appveyor-api-client/";
