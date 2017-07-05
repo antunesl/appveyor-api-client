@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace AppVeyorClient.Clients
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class BuildClient : BaseClient
     {
         public BuildClient(ILogger<BuildClient> logger, string baseUri, string accessToken) : base(logger, baseUri, accessToken)
@@ -12,17 +15,26 @@ namespace AppVeyorClient.Clients
         }
 
 
+        /// <summary>
+        /// Start a build from the last commit
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         public async Task<Build> StartBuildFromLastCommit(StartBuildInfo request)
         {
-
-
             var url = $"api/builds";
-
             var response = await PostHttp<Build>(url, request);
-
             return response.Data;
         }
 
+
+        /// <summary>
+        /// Cancel a build
+        /// </summary>
+        /// <param name="accountName"></param>
+        /// <param name="projectSlug"></param>
+        /// <param name="buildVersion"></param>
+        /// <returns></returns>
         public async Task<ApiResponse> CancelBuild(string accountName, string projectSlug, string buildVersion)
         {
             if (accountName == null)
@@ -36,10 +48,15 @@ namespace AppVeyorClient.Clients
 
             var url = $"api/builds/{accountName}/{projectSlug}/{buildVersion}";
 
-
             return await DeleteHttp(url);
         }
 
+
+        /// <summary>
+        /// Download build log
+        /// </summary>
+        /// <param name="jobId"></param>
+        /// <returns></returns>
         public async Task<ApiResponse<string>> GetBuildLog(string jobId)
         {
             if (jobId == null)

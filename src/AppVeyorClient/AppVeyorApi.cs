@@ -24,10 +24,19 @@ namespace AppVeyorClient
 
         #region Clients
 
+        /// <summary>
+        /// 
+        /// </summary>
         public ProjectClient Projects => _projects ?? (_projects = new ProjectClient(_loggerFactory.CreateLogger<ProjectClient>(), _options.BaseUri, _options.ApiKey));
 
+        /// <summary>
+        /// 
+        /// </summary>
         public BuildClient Builds => _builds ?? (_builds = new BuildClient(_loggerFactory.CreateLogger<BuildClient>(), _options.BaseUri, _options.ApiKey));
 
+        /// <summary>
+        /// 
+        /// </summary>
         public DeploymentClient Deployments => _deployments ?? (_deployments = new DeploymentClient(_loggerFactory.CreateLogger<DeploymentClient>(), _options.BaseUri, _options.ApiKey));
 
         #endregion
