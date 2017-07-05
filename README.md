@@ -2,6 +2,9 @@
 Client for the AppVeyor REST API 
 
 
+## Documentation
+https://antunesl.github.io/appveyor-api-client/api/
+
 
 ## Continuous Integration
 
