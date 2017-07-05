@@ -1,5 +1,5 @@
-# appveyor-api-client
-Client for the AppVeyor REST API 
+# Appveyor API Client
+AppVeyor REST API client for .NET
 
 
 ## Documentation
